@@ -114,9 +114,9 @@ Page({
    * 获得我发布的影评
    */
   getMyComments() {
-    console.log('加载收藏列表...')
+    console.log('加载我的影评列表...')
     wx.showLoading({
-      title: '加载收藏列表...',
+      title: '加载我的影评列表...',
     })
 
     qcloud.request({

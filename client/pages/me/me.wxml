@@ -7,7 +7,7 @@
 <view wx:else>
   <header title="{{isCollectedCommentPage ? '我的收藏' : '我的发布'}}"></header>
 
-  <scroll-view y-scroll class='comment-list {{isShowModal ? "blur" : ""}}' wx:if="{{collectedCommentList.length > 0}}">
+  <scroll-view y-scroll class='comment-list {{isShowModal ? "blur" : ""}}' wx:if="{{collectedCommentList.length >= 0}}">
     <view 
       wx:for='{{isCollectedCommentPage ? collectedCommentList : myComment}}' 
       wx:for-item='comment' 

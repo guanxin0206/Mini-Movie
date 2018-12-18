@@ -62,7 +62,7 @@ Component({
        */
     onTapCollectComment() {  
       console.log('isSelfComment in dialog:', this.data.isSelfComment)
-      if (this.data.isSelfComment == 'true') return console.log('5')
+      if (this.data.isSelfComment == 'true') return console.log('5.无法收藏自己的影评')
 
       let commentId = this.data.commentId
       let commentType = this.data.commentType
